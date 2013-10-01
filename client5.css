@@ -19,6 +19,7 @@ div.box {
 	width : 10px;
 	height: 10px;
 	border: solid black 1px;
+  background-color : #d9534f;
 }
 
 div.box:hover {

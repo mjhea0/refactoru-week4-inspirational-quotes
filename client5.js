@@ -16,7 +16,7 @@ $(document).ready(function(){
 	}
 
 
-	/** iterates through local storage, then calls addRow() function */
+	/** iterates through local storage, then calls the addRow() function */
 	/** should be in a function **/
 	if(localStorage.getItem('list')){
 		var getItems = JSON.parse(localStorage.getItem('list'))
@@ -84,6 +84,7 @@ $(document).ready(function(){
 			/** clear from */
 			$("form")[0].reset();
 			location.reload();
+			//move cursor to author input box to make it easier for user to add multiple quotes
 
 		} else {
 
@@ -96,6 +97,18 @@ $(document).ready(function(){
 })	
 
 	
+//** Sort by rating feature */
+
+//1. loop/ (or sort) through rank object in descending order
+//2. display top 5 quotes
+
+ // Give me a random number between 0 and allQuotes.length - 1
+
+// ** random quote feature */
+
+//1. Range (0 to object.length)
+//2. Get random quote => Math.floor(Math.random() * (OBJECT.length - 1));
+//3. light box, perhaps? modal
 
 	
 
